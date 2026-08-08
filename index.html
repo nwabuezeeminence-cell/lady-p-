@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+@font-face {
+  font-family: "Optimistic";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Optimistic Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
+}
+:where(html) {
+  font-family: "Optimistic", system-ui, sans-serif;
+}
+:where(code, pre, kbd, samp) {
+  font-family: "Optimistic Mono", ui-monospace, monospace;
+}
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nwabueze Precious | Lady P</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container topbar">
+      <div class="logo"><span>LP</span> Lady P</div>
+      <nav>
+        <a href="#photo">Photo</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" class="theme-btn">🎨 Theme</button>
+    </div>
+  </header>
+
+  <!-- Theme Panel -->
+  <div id="themePanel" class="theme-panel hidden">
+    <div class="theme-header">
+      <h3>Choose Theme Color</h3>
+      <button id="closeTheme">✕</button>
+    </div>
+    <p>Click any color to change whole website</p>
+    <div class="color-grid">
+      <button class="color-dot active" data-color="#0a0a0a" style="background:#0a0a0a" title="Black"></button>
+      <button class="color-dot" data-color="#ffffff" style="background:#ffffff; border:1px solid #ccc" title="White"></button>
+      <button class="color-dot" data-color="#2563eb" style="background:#2563eb" title="Blue"></button>
+      <button class="color-dot" data-color="#dc2626" style="background:#dc2626" title="Red"></button>
+      <button class="color-dot" data-color="#16a34a" style="background:#16a34a" title="Green"></button>
+      <button class="color-dot" data-color="#9333ea" style="background:#9333ea" title="Purple"></button>
+      <button class="color-dot" data-color="#ec4899" style="background:#ec4899" title="Pink"></button>
+      <button class="color-dot" data-color="#f59e0b" style="background:#f59e0b" title="Orange"></button>
+      <button class="color-dot" data-color="#14b8a6" style="background:#14b8a6" title="Teal"></button>
+      <button class="color-dot" data-color="#eab308" style="background:#eab308" title="Yellow"></button>
+      <button class="color-dot" data-color="#7c3aed" style="background:#7c3aed" title="Violet"></button>
+      <button class="color-dot" data-color="#0891b2" style="background:#0891b2" title="Cyan"></button>
+      <button class="color-dot" data-color="#be185d" style="background:#be185d" title="Rose"></button>
+      <button class="color-dot" data-color="#059669" style="background:#059669" title="Emerald"></button>
+      <button class="color-dot" data-color="#ea580c" style="background:#ea580c" title="Deep Orange"></button>
+      <button class="color-dot" data-color="#4f46e5" style="background:#4f46e5" title="Indigo"></button>
+    </div>
+    <div class="custom-color">
+      <label>Custom color:</label>
+      <input type="color" id="customColorPicker" value="#0a0a0a">
+    </div>
+  </div>
+
+  <main class="container">
+
+    <!-- BIG PHOTO UPLOAD SECTION -->
+    <section id="photo" class="photo-section">
+      <h2>My Photo</h2>
+      <div class="big-photo-wrap">
+        <div class="big-photo-frame" id="photoFrame">
+          <img id="photoPreview" class="hidden" alt="Your photo">
+          <div id="photoPlaceholder" class="photo-placeholder">
+            <div class="photo-icon">📸</div>
+            <h3>Upload Your Photo</h3>
+            <p>Click here or drag & drop your photo<br><small>Big, clear photo recommended</small></p>
+          </div>
+        </div>
+        <div class="photo-actions">
+          <label for="photoInput" class="btn">📤 Choose Photo</label>
+          <button id="removePhoto" class="btn ghost hidden">🗑 Remove Photo</button>
+          <input type="file" id="photoInput" accept="image/*" hidden>
+        </div>
+        <p class="photo-hint">Your photo will be saved and show every time you open the site. Supports JPG, PNG.</p>
+      </div>
+    </section>
+
+    <section class="hero">
+      <h1>Hi, I'm <span>Nwabueze Precious</span></h1>
+      <p class="nickname">Nickname: Lady P</p>
+      <p>I'm from Rivers State, Nigeria. My best color is Black. I'm a Christian student learning and growing every day.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p><strong>Full Name:</strong> Nwabueze Precious</p>
+        <p><strong>Nickname:</strong> Lady P</p>
+        <p><strong>Date of Birth:</strong> 22 May 2011</p>
+        <p><strong>Country:</strong> Nigeria</p>
+        <p><strong>State:</strong> Rivers</p>
+        <p><strong>Religion:</strong> Christian</p>
+        <p><strong>Best Color:</strong> Black</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Primary School</h3>
+          <p>Triumphant School</p>
+        </div>
+        <div class="card">
+          <h3>Secondary School</h3>
+          <p>Adventist Comprehensive College (Now)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p><strong>Email:</strong> rosieroller52@gmail.com</p>
+        <p><strong>WhatsApp:</strong> 09138154775</p>
+        <p><strong>Business Account:</strong> Not yet</p>
+        <a class="btn" href="mailto:rosieroller52@gmail.com">Send Email</a>
+        <a class="btn whatsapp" href="https://wa.me/2349138154775">Chat on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Nwabueze Precious - Lady P | Rivers, Nigeria</p>
+  </footer>
+
+  <script src="script.js"></script>
+<script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body>
+            </html>
+            
